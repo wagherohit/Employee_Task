@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Submitted</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center text-success">Employee Submitted Successfully!</h2>
+
+    <div class="card mt-4">
+      <div class="card-body">
+        <h5 class="card-title mb-3">Employee Details:</h5>
+        <p><strong>Name:</strong> <%= data.name %></p>
+        <p><strong>Age:</strong> <%= data.age %></p>
+        <p><strong>Department:</strong> <%= data.department %></p>
+        <p><strong>Designation:</strong> <%= data.designation %></p>
+        <p><strong>Salary:</strong> $<%= data.salary %></p>
+        <p><strong>Location:</strong> <%= data.location %></p>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="/" class="btn btn-primary">Add Another</a>
+      <a href="/employees" class="btn btn-secondary ms-2">View All Employees</a>
+    </div>
+  </div>
+</body>
+</html>
